@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    
+}
+
+.contenedor {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0.3),transparent),url(../images/Backgroundacercade.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.logo  {
+    width: 120px;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.cart-icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 50%;
+}
+
+
+
+.galeria {
+    width: 100%;
+    height: 100vh;
+    
+    overflow: hidden;
+    
+}
+
+.galeria .carousel {
+    width: 300px;
+    margin: 20px auto 0;
+    overflow: visible;
+}
+
+.carousel img{
+    -webkit-box-reflect: below 20px;
+}
+
+
+
+
+.social-icons {
+    position: absolute;
+    right: 3%;
+    bottom: 0%;
+}
+
+.social-icons img {
+    width: 40px;
+    display: block;
+    margin: 30px 20px;
+}
+
+
+@media screen and (max-width: 900px){
+
+
+.contenedor {
+    display: scroll;
+}
+
+
+
+
+    
+.galeria {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+
+    .galeria .carousel {
+    width: 100%;
+    margin-top: 100px;
+    overflow: visible;
+}
+    .galeria .carousel ul{
+        width: 80%;
+    }
+
+
+      .social-icons img {
+    width: 50px;
+    display: inline;
+    margin: 100px 30px;
+    }
+
+
+ nav ul {
+    text-align: center;
+    padding-right: 0px;
+    margin-bottom: -30px;
+}
+
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+
+
+
+    nav {
+    display: inline;
+    font-size: 30px;
+    }
+
+    .logo  {
+    
+    width: 120px;
+    cursor: pointer;
+    padding: 20px;
+    margin-left: 120px;
+}
+
+.cart-icon {
+    width: 0px;
+    cursor: pointer;
+}
+
+
+
+   
+}
