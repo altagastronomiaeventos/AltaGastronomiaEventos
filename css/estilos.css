@@ -149,7 +149,7 @@ nav ul li a:hover::after {
     margin: 25px 5px;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 760px){
 
     
     
@@ -216,7 +216,7 @@ nav ul li a:hover::after {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 100% ;
+    margin-top: 80% ;
 
 }
     .text-box span {
